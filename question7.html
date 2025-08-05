@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let array=[];
+        for (let i=0; i<=100;i++){
+            array.push(i);
+        }
+        console.log(array)
+        let multiples=(array)=>{
+
+            for (let m=0; m<=100; m++){
+                if  (array[m]%3==0){
+                    console.log("Fizz")
+                }
+                else if (array[m]%5==0){
+                    console.log("Buzz")
+                }
+                else if (array[m]%3==0 && array[m]%5==0){
+                    console.log("FizzBuzz")
+                }
+                
+            }
+
+        }
+        multiples(array);
+    </script>
+</body>
+</html>
