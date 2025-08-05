@@ -14,13 +14,18 @@
       unde.
     </p>
     <script>
-    
-        let body=body.setInterval(()=>{
-            body.style.background-color=="black"
-        },1000)
-        body.style.color="red"
-        
-        
+        let body=document.body;
+       isOpen=true;
+        setInterval(() => {
+            if (isOpen) {
+                body.style.backgroundColor = "red";
+                isOpen = false;
+            } else {
+                body.style.backgroundColor = "blue";
+                isOpen = true;
+            }
+        }, 2000);
+      
     </script>
   </body>
 </html>

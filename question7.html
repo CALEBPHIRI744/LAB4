@@ -15,15 +15,16 @@
         let multiples=(array)=>{
 
             for (let m=0; m<=100; m++){
-                if  (array[m]%3==0){
+                   if (array[m]%3==0 && array[m]%5==0){
+                    console.log("FizzBuzz")
+                }
+                else if  (array[m]%3==0){
                     console.log("Fizz")
                 }
                 else if (array[m]%5==0){
                     console.log("Buzz")
                 }
-                else if (array[m]%3==0 && array[m]%5==0){
-                    console.log("FizzBuzz")
-                }
+              
                 
             }
 

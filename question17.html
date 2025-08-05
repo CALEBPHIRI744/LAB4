@@ -1,39 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
-</head>
-<body>
-    
-
-    <h2>Hello World</h2>
-    <div class="h">
-
-    </div>
-    <script>
-        const todos=[
-            {
-                id:1, description:"Buy grocerries", priority:"high"
-            },
-            {
-                id:1, description:"Buy grocerries", priority:"high"
-            },
-            {
-                id:3, description:"Buy grocerries", priority:"high"
-            },
-            {
-                id:4, description:"Buy grocerries", priority:"high"
-            }
-        ]
-        for (const element of todos) {
-            let h1=document.createElement("ul");
-            h1.innerText=element.todos.description;
-            ul.appendChild(h1);
-            
+    <style>
+        body{
+            background-color: lightblue;
         }
+        h2{
+            background-color: #ffffff;
+            font-weight: 200;
+            font-size: 1.3rem;
+            color: rgb(73, 72,72);
+            padding: 0.6rem 0.4rem;
+            margin:0.5rem 0;
+            box-shadow: rgb(0,0,0.16) 0px 1px 4px;
 
+        }
+    </style>
+  </head>
+  <body>
+    <h2>Hello World</h2>
+    <div id="div"></div>
+
+    <script>
+      let ul = document.getElementById("div");
+      const todos = [
+        {
+          id: 1,
+          description: "Buy grocerries",
+          priority: "high",
+        },
+        {
+          id: 1,
+          description: "Caleb phiri",
+          priority: "high",
+        },
+        {
+          id: 3,
+          description: "DIstifa",
+          priority: "high",
+        },
+        {
+          id: 4,
+          description: "I will be the owner of many companies",
+          priority: "high",
+        },
+        {
+            id: 5,
+            description: "Pray without ceasing",
+            priority: "high",
+        }
+      ];
+      for (const element of todos) {
+        let li = document.createElement("h2");
+        li.innerText = `${element.description}`;
+        ul.appendChild(li);
+      }
     </script>
-</body>
+  </body>
 </html>
