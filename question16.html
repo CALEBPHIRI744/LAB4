@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="hello">Hello World</h1>
+    <p id="paragraph">
+      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio temporibus
+      sit aliquid ipsa debitis repellat possimus molestias alias quisquam rem?
+      Impedit voluptatibus incidunt natus voluptatum quaerat, adipisci officiis
+      blanditiis. Quasi.
+    </p>
+    <script>
+        let changedContents=()=>{
+        let h1=document.getElementById("hello")
+        h1.innerText="Hello Changed"
+        let paragraph=document.getElementById("paragraph");
+        paragraph.innerText="the paragraph has now changed"
+
+        }
+    setInterval(changedContents, 4000);
+       
+    </script>
+  </body>
+</html>
