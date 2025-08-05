@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let Opeartors=()=>{
+            class Animal{
+                constructor(name, color){
+                    this.name=name;
+                    this.color=color
+                }
+            }
+            class dog {
+                constructor(name, color, bark){
+                    super(name, color)
+                }
+
+                barkr() {
+                    console.log("dogs bark")
+                    
+                }
+            }
+        }
+
+        const dog2=new Animal("Shepard", "white");
+        console.log(dog2 instanceof Animal);
+        console.log(typeof dog2);
+        delete dog2;
+
+    </script>
+</body>
+</html>
