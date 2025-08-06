@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>Enter the time in seconds</h2>
+    <p id="time"></p>
+    <script>
+        let time=document.getElementById("time");
+        const TimeBruh=()=>{
+        let value= prompt("Enter the time in seconds")
+        parseInt(value);
+        let minutes=value/60;
+        console.log(minutes)
+        alert(minutes);
+        time.innerText=minutes;}
+        TimeBruh()
+    </script>
+</body>
+</html>
